@@ -1,0 +1,36 @@
+{
+  "name": "genpark-aeo-entity-schema-markup-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Compile product specification attributes into Schema.org JSON-LD snippets for AEO optimization.",
+  "author": "genpark",
+  "category": "seo",
+  "tags": [
+    "aeo",
+    "schema-markup",
+    "json-ld",
+    "seo",
+    "structured-data"
+  ],
+  "inputs": {
+    "product_name": {
+      "type": "string",
+      "description": "Name of the product."
+    },
+    "price_usd": {
+      "type": "number",
+      "description": "Product price in USD."
+    },
+    "sku": {
+      "type": "string",
+      "description": "Product SKU code."
+    }
+  },
+  "outputs": {
+    "json_ld_schema": {
+      "type": "string",
+      "description": "Formatted Schema.org JSON-LD payload."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
